@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas: 
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em 
+            */
+            font-size: 1em;
+            /* lighter normal bold bolder ou 100-900 */
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*short hand:
+            font-style -> font-weight -> font-size -> font-family
+
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: Arial, Helvetica, sans-serif;
+            */
+            font: italic bolder 3em 'Arial Helvetica', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Arial Helvetica', sans-serif;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ducimus molestias nulla quam nam suscipit ea vitae. Dolor perspiciatis odio vitae delectus ullam dolorem in impedit eum unde, praesentium quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem, commodi sunt quisquam iusto, pariatur nostrum a vero, non esse vel! Voluptate, debitis enim dolore quaerat eligendi placeat provident praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolor sequi laboriosam amet sit ullam blanditiis eius pariatur minus officia cum ut qui beatae, aspernatur labore! Natus reprehenderit sit eius.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem placeat architecto, maxime blanditiis minima aliquam, ut adipisci molestiae corrupti mollitia expedita repellat dignissimos deserunt. Molestias, commodi. Ratione nihil asperiores consequatur.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aut in cupiditate recusandae. Commodi debitis recusandae repellat, porro tenetur, incidunt quod culpa odit accusamus veritatis facere voluptas accusantium! Officia, soluta!</p>
+</body>
+</html>
