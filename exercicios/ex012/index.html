@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estilos Inline</title>
+    <title>Mídias em HTML5</title>
 </head>
-<body style="background-color: lightskyblue; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
-    <h1 style="color: mediumblue; font-size: 1.5em; background-color: dodgerblue;">Capítulo 1</h1>
-    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.1</h2>
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minus hic culpa natus, consequuntur adipisci. Impedit mollitia est animi hic nesciunt iure, ipsum facilis voluptatem saepe. Praesentium excepturi quidem eum?</p>
-    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.2</h2>
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, veritatis consectetur. At, odit dolores natus aut sint eius provident consectetur accusantium modi! Eligendi necessitatibus, quidem sequi enim voluptatem unde itaque!</p>
-    <h1 style="color: mediumblue; font-size: 1.5em; background-color: dodgerblue;">Capítulo 2</h1>
-    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.1</h2>
-    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id facere dolorem, fugit doloribus unde veniam esse quaerat modi, vero officiis blanditiis maxime culpa. Quibusdam minus nisi nemo magni impedit.</p>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou, simplesmente, aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor</p>
+    <video width="560" poster="imagens/video-capa.png" controls autoplay loop>
+        <source src="midia/meu-video.m4v.m4v" type="video/m4v">
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos</p>
+    </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/191894507?h=e15bf4bcf0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>

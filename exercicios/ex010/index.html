@@ -4,21 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
-    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
-    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
-
-    <h1>Usando links internos</h1>
-    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página.</a></p>
-    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
-
-    <h1>Links para download</h1>
-    <ul type="square">
-        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">Baixar arquivo em PDF</a></li>
-        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Aquivo compactado em ZIP</a></li>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2> 
+    <ol type="1"> <!--1 A a I i-->
+        <li>Acordar</li>
+        <li>Ligar para o João
+        <li>Tomar café
+        <li>Escovar os dentes
+        <li>Ir para a faculdade
+        <li>Almoçar
+        <li>Ir para o trabalho
+        <li>Voltar para a casa
+        <li>Jantar
+        <li>Dormir
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="disc"> <!--disc circle square-->
+        <li>Pão
+        <li>Leite
+        <li>Tomate
+        <li>Alface
+        <li>Manteiga
+        <li>Arroz
+        <li>Feijão
     </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="square">
+            <li>Mario Bross</li>
+            <ul type="circle">
+                <li>Mario Bross 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Zelda</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>God of War</li>
+            <li>The Last of Us</li>
+            <li>GTA</li>
+        </ul>
+        <li>Xbox</li>
+        <ul type="square">
+            <li>Forza</li>
+            <li>The Witcher 3</li>
+            <li>Red Dead Redemption 2</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
