@@ -17,16 +17,17 @@
                 <p>
                     <label for="inome">Nome: </label>
                     <br>
-                    <input type="text" name="nome" id="inome" required placeholder="Digite o seu nome">
+                    <input type="text" name="nome" id="inome" required placeholder="Digite o seu nome" class="usuario">
                 </p> 
                 <p>
-                    <label for="isen">Senha</label>
+                    <label for="isen">Senha: </label>
                     <br>
-                    <input type="password" name="sen" id="isen" required placeholder="Digite a sua senha">
+                    <input type="password" name="sen" id="isen" required minlength="6" placeholder="Digite a sua senha" class="usuario">
                 </p>
-                <p>Esqueceu sua senha?</p>
+                <a href="#"><p id="pergunta">Esqueceu sua senha?</p>
+                </a>
                 <p>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Login" id="enviar">
                 </p>
             </form>
         </div>
