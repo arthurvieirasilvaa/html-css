@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome </label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="iemail">E-mail </label>
+                <input type="email" name="email" id="iemail" required minlength="8" maxlength="50" placeholder="e-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="isenha">Senha </label>
+                <input type="password" name="senha" id="isenha" required minlength="6" placeholder="senha" autocomplete="off">
+            </p>
+            <p>
+                <label for="iidade">Idade </label>
+                <input type="number" name="idade" id="iidade" required min="1" max="100" placeholder="idade" autocomplete="off">
+            </p>
+            <p>
+                <label for="idata">Data </label>
+                <input type="date" name="data" id="idata" required autocomplete="off">
+            </p>
+            <p>
+                <label for="itel">Telefone </label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{5}-\d{4}$">
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isexmas" required>
+                <label for="isexmas">Masculino</label>
+                <input type="radio" name="sexo" id="isexfem">
+                <label for="isexfem">Feminino</label>
+            </p>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Melhores Séries</legend>
+            <input type="checkbox" name="vikings" id="ivikings"> <label for="ivikings">Vikings</label><br>
+            <input type="checkbox" name="dark" id="idark"> <label for="idark">Dark</label><br>
+            <input type="checkbox" name="st" id="ist"> <label for="ist">Stranger Things</label><br>
+            <input type="checkbox" name="wand" id="iwand"> <label for="iwand">Wandinha</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
