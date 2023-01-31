@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="itimes">Escolha o seu time: </label>
+            <select name="times" id="itimes">
+                <optgroup label="Times de São Paulo">
+                    <option value="COR">Corinthians</option>
+                    <option value="PAL">Palmeiras</option>
+                    <option value="SAN">Santos</option>
+                    <option value="SAO">São Paulo</option>
+                    <option value="BRG">RB Bragantino</option>
+                </optgroup>
+
+                <optgroup label="Times do Rio de Janeiro">
+                    <option value="BOT" selected>Botafogo</option>
+                    <option value="FLA">Flamengo</option>
+                    <option value="FLU">Fluminense</option>
+                    <option value="VAS">Vasco</option>
+                </optgroup>
+
+                <optgroup label="Time de Minas Gerais">
+                    <option value="AME">América - MG</option>
+                    <option value="CAM">Atlético - MG</option>
+                    <option value="CRU">Cruzeiro</option>
+                </optgroup>
+
+                <optgroup label="Times do Rio Grande do Sul">
+                    <option value="GRE">Grêmio</option>
+                    <option value="INT">Internacional</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="ijogo">Jogo Favorito: </label>
+            <input type="text" name="jogo" id="ijogo" list="jogoslista">
+            <datalist id="jogoslista">
+                <option>Red Dead Redemption</option>
+                <option>The Last of Us</option>
+                <option>God of War</option>
+                <option>GTA</option>
+                <option>Horizon</option>
+                <option>Far Cry</option>
+                <option>Black</option>
+                <option>Minecraft</option>
+                <option>Elden Ring</option>
+                <option>Fortnite</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="inota1">Nota 1: </label>
+            <input type="number" name="nota1" id="inota1" required min="0" max="10" oninput="imed.innerHTML = ( Number(inota1.value) + Number(inota2.value) / 2 )">
+        </p>
+        <p>
+            <label for="inota2">Nota 2: </label>
+            <input type="number" name="nota2" id="inota2" required min="0" max="10" oninput="imed.innerHTML = ( Number(inota1.value) + Number(inota2.value) / 2 )">
+        </p>
+        <p>
+            <label for="imed">Média: </label>
+            <output name="med" id="imed">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
