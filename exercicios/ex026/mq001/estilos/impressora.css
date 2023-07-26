@@ -3,8 +3,8 @@
 /* Estilo para impressoras */
 
 * {
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
 }
 
 html {
@@ -22,5 +22,5 @@ article {
 }
 
 article::after {
-    content: 'Este artigo foi impresso através do site www.cursoemvideo.com';
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
 }
