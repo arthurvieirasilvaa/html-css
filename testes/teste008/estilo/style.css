@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+}
+
+div#container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+div#form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+div#formulario {
+    background-color: var(--form-background);
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+}
+
+div#imagem {
+    display: block;
+    background-color: var(--background) url(../imagens/side-image.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: var(--font1);
+    font-size: 1.2em;
+    color: var(--text-title);
+    padding: 2px;
+}
+
+h1::before {
+    content: url(../imagens/log-in.svg);
+    margin: 5px;
+}
+
+p {
+    font-family: var(--font1);
+    font-size: 12px;
+    color: var(--text-base);
+    padding: 5px;
+}
